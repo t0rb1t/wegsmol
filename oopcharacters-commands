@@ -1,0 +1,9 @@
+commands:
+
+h, help             = show this message
+a, att, attack      = you must enter "attack [enemy name] [damage amount]
+r, rep, report      = report on the enemies, give their stats
+t, turn             = move 1 turn forward (used for decreasing batt capacity mainly)
+st, stop            = stop program, abandon progress
+s, save             = save all info to file for later retreval (not yet implemented)
+n, names            = print all of the names of the enemies
