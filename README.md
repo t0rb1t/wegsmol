@@ -1,5 +1,7 @@
 =======
 # WEGSMOL
+=======
+
 Requires Python 3
 This is a simple set of scripts to create and manage/interact with enemies in my **AWARD WINNING** new games titled *WEGSMOL*
 
@@ -15,4 +17,4 @@ So, the heart of the code is "oopcharacters.py"
 To use it, simply run it using python3, you can optionally enter the number of enemies and level of enemies ahead of time as arguments.
 
 So far there is very little else to explain. I plan on adding more to the help section, and I *plan on improving documentation.*
->>>>>>> README.md
+
