@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import charactergen, names, namegenerator, sys
 
 global funcDict
