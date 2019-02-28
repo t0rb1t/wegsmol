@@ -105,7 +105,7 @@ def main(args):
 	if not len(sys.argv) > 1:
 		try:
 			numberOfEnemies = int(input("how many enemies should there be? > "))
-			difficulty = int(input("what level shoul the enemies be? > "))
+			difficulty = int(input("what level should the enemies be? > "))
 		except ValueError:
 			print("please just type numbers.")
 	elif len(sys.argv) == 3:
