@@ -18,3 +18,4 @@ To use it, simply run it using python3, you can optionally enter the number of e
 
 So far there is very little else to explain. I plan on adding more to the help section, and I *plan on improving documentation.*
 
+There rule book for the game can be [found here](https://docs.google.com/document/d/1BfdjlYFQWuHkXSkVFmwNedCEAlPEfqiF9qN02p7yWU0/). You must have a google account and request access from me.
