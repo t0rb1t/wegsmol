@@ -110,8 +110,8 @@ def main(args):
 	elif len(sys.argv) == 3:
 		numberOfEnemies = int(sys.argv[1])
 		difficulty = int(sys.argv[2])
-		print("enter ? for help")
-		startEncounter(numberOfEnemies, difficulty)
+	print("\nenter ? for help\n")
+	startEncounter(numberOfEnemies, difficulty)
 
 funcDict = {('attack','a','att'):attack,
 			('report','r','rep'):report,
