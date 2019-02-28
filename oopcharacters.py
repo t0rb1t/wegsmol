@@ -102,14 +102,14 @@ def startEncounter(numberOfEnemies, difficulty):
 
 def main(args):
 	if not len(sys.argv) > 1:
-			try:
-				numberOfEnemies = int(input("how many enemies should there be? > "))
-				difficulty = int(input("what level shoul the enemies be? > "))
-			except ValueError:
-				print("please just type numbers.")
-		if len(sys.argv) == 3:
-			numberOfEnemies = int(sys.argv[1])
-			difficulty = int(sys.argv[2])
+		try:
+			numberOfEnemies = int(input("how many enemies should there be? > "))
+			difficulty = int(input("what level shoul the enemies be? > "))
+		except ValueError:
+			print("please just type numbers.")
+	elif len(sys.argv) == 3:
+		numberOfEnemies = int(sys.argv[1])
+		difficulty = int(sys.argv[2])
 		print("enter ? for help")
 		startEncounter(numberOfEnemies, difficulty)
 
