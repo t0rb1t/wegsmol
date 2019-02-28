@@ -1,6 +1,6 @@
 commands:
 
-h, help             = show this message
+h, help, ?          = show this message
 a, att, attack      = you must enter "attack [enemy name] [damage amount]
 r, rep, report      = report on the enemies, give their stats
 t, turn             = move 1 turn forward (used for decreasing batt capacity mainly)

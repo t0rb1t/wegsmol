@@ -15,13 +15,15 @@ class enemy:
 		self.shadeActive = shadeActive
 		self.weapons = weapons
 	def damage(self, amount, kind):
-		if self.cShade > amount:
+		if self.shadeActive is False:
+			self.cHealth -= amount
+		elif self.cShade > amount:
 			self.cShade -= amount
 		else:
 			amount -= self.cShade
 			self.cHealth -= amount
 			self.cShade = 0
-			print(self.name,"was DAMAGED")
+		print(self.name,"was DAMAGED")
 	def turn(self):
 		if self.shadeActive:
 			self.cBatt -= 20
@@ -29,8 +31,8 @@ class enemy:
 		print(self.name, "has these stats:",self.stats)
 		print("Health: ",self.cHealth,"/",self.mHealth)
 		print("Shade:  ",self.cShade,"/",self.mShade)
-		print("Batt:   ",self.mBatt,"/",self.mBatt)
-		print("Speed:  ",self.speed."meters/turn")
+		print("Batt:   ",self.cBatt,"/",self.mBatt)
+		print("Speed:  ",self.speed,"meters/turn")
 		print("Level:  ",self.level)
 		print("Weapons:",self.weapons)
 
@@ -46,6 +48,7 @@ def report(enemies, name=None):
 	if name == None:
 		for i in enemies:
 			i.selfReport()
+			print()
 	else:
 		for i in enemies:
 			if i.name.lower() == name.lower():
@@ -63,7 +66,16 @@ def helpMessage(enemies):
 	print(helpFile.read())
 	return
 
-def commands(enemies):
+def isGood(funcDict, listy, state=False):
+    if len(listy) <= 0:
+        return state, None
+    elif len(listy) > 0:
+        for i in funcDict:
+            if listy[0] in i:
+                return True, i
+        return isGood(funcDict, listy[1::], False)
+
+def commands(enemies, funcDict):
 	#interprets user input, and makes the magic happen
 	command = input("> ")
 	commList = list(map(str,command.split(" ")))
@@ -71,24 +83,26 @@ def commands(enemies):
 	if 'stop' in commList or 'st' in commList:
 		return
 	else:
-		for i in funcDict:
-			if commList[0] in i:
-				try:
-					funcDict[i](enemies, *commList[1::])
-				except TypeError:
-					print("try entering that command again.")
-	return commands(enemies)
+		goodCommand, dictPart = isGood(funcDict, commList)
+		if goodCommand:
+			try:
+				funcDict[dictPart](enemies, *commList[1::])
+			except TypeError:
+				print("try entering that command again.")
+		else:
+			print("That doesn't seem to be a valid command. Type ? for help")
+	return commands(enemies, funcDict)
 
 def startEncounter(numberOfEnemies, difficulty):
 	enemies = []
 	for i in range(numberOfEnemies):
 		enemies.append(enemy(difficulty, names.get_first_name().lower()))
 	enemyNames(enemies)
-	return commands(enemies)
+	return commands(enemies, funcDict)
 
 funcDict = {('attack','a','att'):attack,
 			('report','r','rep'):report,
-			('help','h'):helpMessage,
+			('help','h',"?"):helpMessage,
 			('turn','t'):classTurn,
 			('names','n'):enemyNames
 			}
@@ -100,4 +114,5 @@ if __name__ == "__main__":
 	if len(sys.argv) == 3:
 		numberOfEnemies = int(sys.argv[1])
 		difficulty = int(sys.argv[2])
+	print("enter ? for help")
 	startEncounter(numberOfEnemies, difficulty)
