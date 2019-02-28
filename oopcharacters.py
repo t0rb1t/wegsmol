@@ -100,6 +100,19 @@ def startEncounter(numberOfEnemies, difficulty):
 	enemyNames(enemies)
 	return commands(enemies, funcDict)
 
+def main(args):
+	if not len(sys.argv) > 1:
+			try:
+				numberOfEnemies = int(input("how many enemies should there be? > "))
+				difficulty = int(input("what level shoul the enemies be? > "))
+			except ValueError:
+				print("please just type numbers.")
+		if len(sys.argv) == 3:
+			numberOfEnemies = int(sys.argv[1])
+			difficulty = int(sys.argv[2])
+		print("enter ? for help")
+		startEncounter(numberOfEnemies, difficulty)
+
 funcDict = {('attack','a','att'):attack,
 			('report','r','rep'):report,
 			('help','h',"?"):helpMessage,
@@ -108,11 +121,4 @@ funcDict = {('attack','a','att'):attack,
 			}
 
 if __name__ == "__main__":
-	if not len(sys.argv) > 1:
-		numberOfEnemies = int(input("how many enemies should there be? > "))
-		difficulty = int(input("what level shoul the enemies be? > "))
-	if len(sys.argv) == 3:
-		numberOfEnemies = int(sys.argv[1])
-		difficulty = int(sys.argv[2])
-	print("enter ? for help")
-	startEncounter(numberOfEnemies, difficulty)
+	main(sys.argv)
