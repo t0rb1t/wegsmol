@@ -70,18 +70,21 @@ def attack(enemies, name, damage, kind="physical"):
 	return enemies
 
 def storeEnemies(enemies, filename=datetime.datetime.now().strftime("%y-%m-%d-%H-%M")):
+	#TODO: It's storing the wrong one or something?
 	single = False
 	for i in enemies:
 		if i.name == filename:
+			print(i.name)
 			single = True
 			theEnemy = i
 	if single:
-		objectSaver.objPickler([i], filename)
+		objectSaver.objPickler([theEnemy], filename)
 	elif not single:
 		objectSaver.objPickler(enemies, filename)
 	return enemies
 
 def fetchEnemies(enemies, filename, mode='add'):
+	#TODO: ENSURE THAT IMPORTED ENEMIES AREN'T DUPED NAMES
 	storedenemies = objectSaver.unpickler(filename)
 	if mode == "replace":
 		return storedenemies
@@ -90,17 +93,27 @@ def fetchEnemies(enemies, filename, mode='add'):
 		return enemies
 
 def kill(enemies, name):
+	if name == 'all':
+		return []
 	for i in enemies:
 		if i.name == name:
 			enemies.remove(i)
 	return enemies
 
 def spawn(enemies, level):
+	#TODO: Ensure that there are no name dupes!!!
 	try:
 		level = int(level)
 	except ValueError:
 		level = int(input("what level should the new enemy be? > "))
-	enemies.append(enemy(level, names.get_first_name().lower()))
+
+	name = names.get_first_name().lower()
+	while name in [i.name for i in enemies]:
+		name = names.get_first_name().lower()
+
+	newEnemy = enemy(level, name)
+	enemies.append(newEnemy)
+	print(newEnemy.name,"was spawned")
 	return enemies
 
 def helpMessage(enemies):
@@ -127,6 +140,7 @@ def commands(enemies, funcDict):
 		goodCommand, dictPart = isGood(funcDict, commList)
 		if goodCommand:
 			try:
+				# print(*commList[1::])
 				enemies = funcDict[dictPart](enemies, *commList[1::])
 			except TypeError:
 				print("try entering that command again.")
@@ -138,11 +152,12 @@ def startEncounter(numberOfEnemies, level):
 	enemies = []
 	for i in range(numberOfEnemies):
 		spawn(enemies, level)
-	enemyNames(enemies)
 	return commands(enemies, funcDict)
 
 def main(args):
-	if len(sys.argv) > 1:
+	if len(sys.argv) == 2:
+		numberOfEnemies, difficulty = 0, 0
+	elif len(sys.argv) <= 1:
 		try:
 			numberOfEnemies = int(input("how many enemies should there be? > "))
 			difficulty = int(input("what level should the enemies be? > "))
