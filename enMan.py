@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+
+"""
+this script is for managing enemies.
+that is why it's called enMan, that's short for enemy Manager
+Documentation is not great, 
+feel free to add documentation and make a pull request
+"""
+
 #system modules
 import sys, time, datetime
 
