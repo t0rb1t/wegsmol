@@ -1,9 +1,22 @@
 commands:
 
 h, help, ?          = show this message
-a, att, attack      = you must enter "attack [enemy name] [damage amount]
+a, att, attack      = to apply damage to an enemy
 r, rep, report      = report on the enemies, give their stats
 t, turn             = move 1 turn forward (used for decreasing batt capacity mainly)
 st, stop            = stop program, abandon progress
-s, save             = save all info to file for later retreval (not yet implemented)
-n, names            = print all of the names of the enemies
+
+n, ls, names, name  = print all of the names of the enemies
+                    > you must enter "attack [enemy name] [damage amount]"
+
+s, save, store      = save all info to file for later retreval
+                    > optional second parameter (filename)
+
+fetch, f, retreive  = retreive enemies from a file
+                    > defaults to "add" mode, enter "filename replace"
+
+k, kill             = remove enemy from list of enemies entierly. 
+                      (warning, if any enemies have the same name, both with get deleted, we are working towards fixing this)
+
+sp, spawn           = add another enemy
+                    > mandatory second parameter int(level)

@@ -2,23 +2,20 @@
 
 import pickle, csvInterp
 
-def listPickler(theObject, newFileName):
-    with open(newFileName, "wb") as pickleFile:
+def objPickler(theObject, newFileName):
+    #saves list (theObject) as ./pickles/newFileName
+    with open(("./pickles/{}".format(newFileName)), "wb") as pickleFile:
         pickle.dump(theObject, pickleFile)
-    return
+    return 
 
 def unpickler(filename):
-    with open(filename, "rb") as pickleFile:
+    #retrieves object data from ./pickles/filename
+    with open(("./pickles/{}".format(filename)), "rb") as pickleFile:
         return pickle.load(pickleFile)
-
-def tempFunc():
-    csvAsDict = csvInterp.myCsvReader('weapon-stats.csv')
-    weapons = csvInterp.weaponsToClass(csvAsDict)
-    return weapons
 
 if __name__ == '__main__':
     filename = "tempDataName.pkl"
-    listPickler(*(tempFunc(), filename))
+    objPickler(*(tempFunc(), filename))
     unpickled = unpickler(filename)
     for i in unpickled:
         print(i.specs())
