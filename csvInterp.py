@@ -29,7 +29,7 @@ def myCsvReader(filename):
                 filteredWeapons.append(i)
     return filteredWeapons
 
-def weaponToClass(wepList):
+def weaponsToClass(wepList):
     newWepList = []
     for i in wepList:
         tempWep = weapons(i['Name'],i['Damage'],i['Type'],i['Single Handed'],i['Ideal range (meters)'],i['Reduction Window'],i['Default Difficulty'])
@@ -38,6 +38,6 @@ def weaponToClass(wepList):
 
 if __name__ == '__main__':
     filteredWeapons = myCsvReader('weapon-stats.csv')
-    classWeapons = weaponToClass(filteredWeapons)
+    classWeapons = weaponsToClass(filteredWeapons)
     for i in classWeapons:
         print(i.specs())
