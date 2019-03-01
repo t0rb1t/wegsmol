@@ -63,9 +63,10 @@ def attack(enemies, name, damage, kind="physical"):
 			i.damage(int(damage), kind)
 
 def helpMessage(enemies):
-	helpFile = open("oopcharacters-commands","r")
-	print(helpFile.read())
-	return
+	with open("oopcharacters-commands", "r") as helpFile:
+	# helpFile = open("oopcharacters-commands","r")
+		print(helpFile.read())
+		return
 
 def isGood(funcDict, listy, state=False):
     if len(listy) <= 0:
