@@ -64,7 +64,6 @@ def attack(enemies, name, damage, kind="physical"):
 
 def helpMessage(enemies):
 	with open("oopcharacters-commands", "r") as helpFile:
-	# helpFile = open("oopcharacters-commands","r")
 		print(helpFile.read())
 		return
 
@@ -81,7 +80,6 @@ def commands(enemies, funcDict):
 	#interprets user input, and makes the magic happen
 	command = input("> ")
 	commList = list(map(str,command.split(" ")))
-	# print(commList)
 	if 'stop' in commList or 'st' in commList:
 		return
 	else:
