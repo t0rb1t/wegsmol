@@ -2,9 +2,9 @@ Single Handed,Type,Name,Damage,Ideal range (meters),Reduction Window,Default Dif
 TRUE,Melee,Electrified Baton,STR+1,1,N/A,,,$200,FALSE,Medium,,1,0,0 - 1
 FALSE,Melee,Telescoping staff,STR+1,1-2,N/A,,,$150,FALSE,Medium,,2,0,0 - 2
 TRUE,Melee,Knife,STR+1,1,N/A,,Simple sharp object,$50,FALSE,Light,,1,0,0 - 1
-FALSE,Melee,Sledge,STR+3,1-2,N/A,,Heavy,$100,FALSE,Heavy,,2,0,0 - 2
-TRUE,Melee,Rapier,STR+2,1-2,N/A,,Very light,$300,FALSE,Light,,2,0,0 - 2
-TRUE,Melee,Cudgel,STR+1,1-2,N/A,,Like a baseball bat ,$200,FALSE,Medium,,2,0,0 - 2
+FALSE,Melee,Sledge,STR+3,1,N/A,,Heavy,$100,FALSE,Heavy,,2,0,0 - 2
+TRUE,Melee,Rapier,STR+2,1,N/A,,Very light,$300,FALSE,Light,,2,0,0 - 2
+TRUE,Melee,Cudgel,STR+1,1,N/A,,Like a baseball bat ,$200,FALSE,Medium,,2,0,0 - 2
 FALSE,Ranged,Shotgun,12,4-11,1/1,8,You cannot perform aimed attacks,"$1,500",FALSE,Medium,,20,1,1 - 20
 TRUE,Ranged,Pistol,15,6-11,1/1,9,,$800,FALSE,Light,,25,1,1 - 25
 FALSE,Ranged,Long Range Torch,15,5-8,1/1,9,,"$1,000",FALSE,Medium,,5,0,0 - 5

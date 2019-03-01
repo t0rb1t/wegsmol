@@ -12,11 +12,16 @@ n, ls, names, name  = print all of the names of the enemies
 s, save, store      = save all info to file for later retreval
                     > optional second parameter (filename)
 
-fetch, f, retreive  = retreive enemies from a file
+fetch, f, retreive  = retrieve enemies from a file
                     > defaults to "add" mode, enter "filename replace"
 
-k, kill             = remove enemy from list of enemies entierly. 
-                      (warning, if any enemies have the same name, both with get deleted, we are working towards fixing this)
+k, kill             = remove enemy from list of enemies entirely. 
+                    > (warning, if any enemies have the same name, both will get deleted, we are working towards fixing this)
 
 sp, spawn           = add another enemy
                     > mandatory second parameter int(level)
+
+w, we, weapon       = weaponize enemies (not yet fully tested)
+                    > second argument = (all/single)
+                    > third argument  = (if mode is single: (enemy name), else: optional, unless using 4th argument, then "None")
+                    > fourth argument = optional, filename, defaults to 'weapon-stats.csv'

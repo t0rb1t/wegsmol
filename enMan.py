@@ -8,10 +8,10 @@ feel free to add documentation and make a pull request
 """
 
 #system modules
-import sys, time, datetime
+import sys, time, datetime, random
 
 #custom modules
-import charactergen, names, namegenerator, objectSaver
+import charactergen, names, namegenerator, objectSaver, weapCsv
 
 global funcDict
 
@@ -41,13 +41,15 @@ class enemy:
 		if self.shadeActive:
 			self.cBatt -= 20
 	def selfReport(self):
-		print(self.name, "has these stats:",self.stats)
-		print("Health: ",self.cHealth,"/",self.mHealth)
-		print("Shade:  ",self.cShade,"/",self.mShade)
-		print("Batt:   ",self.cBatt,"/",self.mBatt)
-		print("Speed:  ",self.speed,"meters/turn")
-		print("Level:  ",self.level)
-		print("Weapons:",self.weapons)
+		data = ('{name}\n'
+				'Stats   = {stats}\n'
+				'Health  = {cHealth}/{mHealth}\n'
+				'Shade   = {cShade}/{mShade}\n'
+				'Batt    = {cBatt}/{mBatt}\n'
+				'Speed   = {speed} meters/turn\n'
+				'Level   = {level}\n'.format(**self.__dict__))
+		data += 'Weapons = {}'.format([i.name for i in self.weapons])
+		return data
 
 def classTurn(enemies):
 	for i in enemies:
@@ -62,12 +64,12 @@ def enemyNames(enemies):
 def report(enemies, name=None):
 	if name == None:
 		for i in enemies:
-			i.selfReport()
+			print(i.selfReport())
 			print()
 	else:
 		for i in enemies:
 			if i.name.lower() == name.lower():
-				i.selfReport()
+				print(i.selfReport())
 	print()
 	return enemies
 
@@ -93,7 +95,7 @@ def storeEnemies(enemies, filename=datetime.datetime.now().strftime("%y-%m-%d-%H
 
 def fetchEnemies(enemies, filename, mode='add'):
 	#TODO: ENSURE THAT IMPORTED ENEMIES AREN'T DUPED NAMES
-	storedenemies = objectSaver.unpickler(filename)
+	storedenemies = objectSaver.unPickler(filename)
 	if mode == "replace":
 		return storedenemies
 	elif mode == "add":
@@ -124,8 +126,22 @@ def spawn(enemies, level):
 	print(newEnemy.name,"was spawned")
 	return enemies
 
+def weapon(enemies, mode, name=None, filename='weapon-stats.csv'):
+	tempWep = weapCsv.myCsvReader(filename)
+	weapList = weapCsv.weaponsToClass(tempWep)
+	if mode=='all':
+		for i in enemies:
+			randWeap = random.choice(weapList)
+			randWeap.specs
+			i.weapons.append(randWeap)
+
+	elif mode=='single':
+		#TODO: finish this
+		pass
+	return enemies
+
 def helpMessage(enemies):
-	helpFile = open("oopcharacters-commands","r")
+	helpFile = open("enMan-commands","r")
 	print(helpFile.read())
 	return enemies
 
@@ -189,7 +205,8 @@ funcDict = {('attack', 'a', 'att'):attack,
 			('save', 'store', 's'):storeEnemies,
 			('fetch', 'f', 'retreive'):fetchEnemies,
 			('kill', 'k'):kill,
-			('spawn', 'sp'):spawn
+			('spawn', 'sp'):spawn,
+			('weapon', 'w', 'we'):weapon
 			}
 
 if __name__ == "__main__":
