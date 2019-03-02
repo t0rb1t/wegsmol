@@ -135,7 +135,6 @@ def weapon(enemies, mode, name=None, filename='weapon-stats.csv'):
 	if mode=='all':
 		for i in enemies:
 			i.weaponize(weapList, 2)
-
 	elif mode=='single':
 		#TODO: finish this
 		pass
