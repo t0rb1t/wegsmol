@@ -20,13 +20,14 @@ class enemy:
 	cShade means current shade
 	mShade means max shade
 	"""
-	def __init__(self, level, name, shadeActive=True, weapons=[]):
+	def __init__(self, level, name, shadeActive=True):
+		#TODO: Allow people to send in weapons list already.
 		self.level = level
 		self.name = name
 		self.stats, self.mBatt, self.mShade, self.mHealth, self.speed = charactergen.main(level)
 		self.cBatt, self.cShade, self.cHealth = self.mBatt, self.mShade, self.mHealth
 		self.shadeActive = shadeActive
-		self.weapons = weapons
+		self.weapons = list()
 	def damage(self, amount, kind):
 		if self.shadeActive is False:
 			self.cHealth -= amount
@@ -40,6 +41,9 @@ class enemy:
 	def turn(self):
 		if self.shadeActive:
 			self.cBatt -= 20
+	def weaponize(self, weapList, quantity):
+		for i in range(quantity):
+			self.weapons.append(random.choice(weapList))
 	def selfReport(self):
 		data = ('{name}\n'
 				'Stats   = {stats}\n'
@@ -120,7 +124,6 @@ def spawn(enemies, level):
 	name = names.get_first_name().lower()
 	while name in [i.name for i in enemies]:
 		name = names.get_first_name().lower()
-
 	newEnemy = enemy(level, name)
 	enemies.append(newEnemy)
 	print(newEnemy.name,"was spawned")
@@ -131,9 +134,7 @@ def weapon(enemies, mode, name=None, filename='weapon-stats.csv'):
 	weapList = weapCsv.weaponsToClass(tempWep)
 	if mode=='all':
 		for i in enemies:
-			randWeap = random.choice(weapList)
-			randWeap.specs
-			i.weapons.append(randWeap)
+			i.weaponize(weapList, 2)
 
 	elif mode=='single':
 		#TODO: finish this
