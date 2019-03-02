@@ -55,7 +55,7 @@ def main(args):
 	return stats, batt, shade, health, speed
 
 if __name__ == '__main__':
-	stats, batt, shade, health, = main(sys.argv)
+	stats, batt, shade, health, speed = main(sys.argv)
 	if "all" in sys.argv:
 		print("The character's stat block is {}".format(list(stats.values())))
 		print("They have {} health".format(health))
