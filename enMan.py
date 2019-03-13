@@ -11,7 +11,7 @@ feel free to add documentation and make a pull request
 import sys, time, datetime, random
 
 #custom modules
-import charactergen, names, namegenerator, objectSaver, weapCsv
+import charactergen, names, namegenerator, objectSaver, csvInterp
 
 global funcDict
 
@@ -40,7 +40,7 @@ class enemy:
 		print(self.name,"was DAMAGED")
 	def turn(self):
 		if self.shadeActive:
-			self.cBatt -= 20
+			self.cBatt -= 15
 	def weaponize(self, weapList, quantity):
 		for i in range(quantity):
 			self.weapons.append(random.choice(weapList))
@@ -130,8 +130,8 @@ def spawn(enemies, level):
 	return enemies
 
 def weapon(enemies, mode, name=None, filename='weapon-stats.csv'):
-	tempWep = weapCsv.myCsvReader(filename)
-	weapList = weapCsv.weaponsToClass(tempWep)
+	tempWep = csvInterp.myCsvReader(filename)
+	weapList = csvInterp.weaponsToClass(tempWep)
 	if mode=='all':
 		for i in enemies:
 			i.weaponize(weapList, 2)

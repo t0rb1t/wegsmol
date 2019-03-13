@@ -2,7 +2,7 @@
 
 import csv, sys, os, objectSaver
 
-class weapons:
+class weapon:
     def __init__(self, name, damage, wType, handed, idealR, redPerMeter, defDiff):
         self.name = name
         self.wType = wType
@@ -32,30 +32,63 @@ class weapons:
                     'Reduction Amount/m = {redPerMeter}'.format(**self.__dict__))
         return data
 
+class util:
+    def __init__(self, *args, **kwargs):
+        self.__dict__.update(kwargs)
+        self.Draw = int(self.Draw)
+        self.Solo = True if self.Solo == True else False
+        # self.Value = int(self.Value[1:-1])
+        self.Strain = float(self.Strain)
+    def specs(self):
+        #TODO: clean this up, or... try to
+        data = ('This is the       {Name}\n'
+                'Nickname        = {Nickname}\n'
+                'Price           = {Value}\n'
+                'Draw            = {Draw}\n'
+                'Strain          = {Strain}\n'
+                'Unintegrated    = {Solo}\n'
+                'Purpose         = {Notes}'.format(**self.__dict__))
+        return data
+        
+
 def myCsvReader(filename, exporto=True):
     if os.path.isfile(("./pickles/{}.pkl".format(filename[:-4]))):
-        filteredWeapons = objectSaver.unPickler(filename[:-4])
+        csvItems = objectSaver.unPickler(filename[:-4])
     else:
         with open(filename, newline='') as csvfile:
-            weaponRead = csv.DictReader(csvfile, delimiter=',')
-            filteredWeapons = []
-            for i in weaponRead:
+            csvRead = csv.DictReader(csvfile, delimiter=',')
+            csvItems = []
+            for i in csvRead:
                 if i['Name'] != '':
-                    filteredWeapons.append(i)
+                    csvItems.append(i)
         if exporto:
-            objectSaver.objPickler(filteredWeapons,filename[:-4])
-    return filteredWeapons
+            objectSaver.objPickler(csvItems,filename[:-4])
+    return csvItems
 
 def weaponsToClass(wepList):
     newWepList = []
     for i in wepList:
-        tempWep = weapons(i['Name'],i['Damage'],i['Type'],i['Single Handed'],i['Ideal range (meters)'],i['Reduction Window'],i['Default Difficulty'])
+        tempWep = weapon(i['Name'],i['Damage'],i['Type'],i['Single Handed'],i['Ideal range (meters)'],i['Reduction Window'],i['Default Difficulty'])
         newWepList.append(tempWep)
     return newWepList
 
+def utilsToClass(utilList):
+    newUtilList = []
+    for i in utilList:
+        tempUtil = util(**i)
+        newUtilList.append(tempUtil)
+    return newUtilList
+
 if __name__ == '__main__':
-    filteredWeapons = myCsvReader('weapon-stats.csv')
-    classWeapons = weaponsToClass(filteredWeapons)
-    for i in classWeapons:
+    if len(sys.argv) < 2:
+        print("Please put \"weapon\" or \"util\" as an arg")
+    else:
+        filename = ("{}-stats.csv".format(sys.argv[1]))
+    csvItems = myCsvReader(filename)
+    if sys.argv[1] == "weapon":
+        classed = weaponsToClass(csvItems)
+    elif sys.argv[1] == "util":
+        classed = utilsToClass(csvItems)
+    for i in classed:
         print(i.specs())
         print()

@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-#consider removing weapCsv dependency
-import pickle, weapCsv
+#consider removing csvInterp dependency
+import pickle
 
 def objPickler(theObject, newFileName):
     #saves list (theObject) as ./pickles/newFileName
@@ -14,10 +14,10 @@ def unPickler(filename):
     with open(("./pickles/{}.pkl".format(filename)), "rb") as pickleFile:
         return pickle.load(pickleFile)
 
-if __name__ == '__main__':
-    filename = "tempDataName"
-    objPickler(*(tempFunc(), filename))
-    unpickled = unPickler(filename)
-    for i in unpickled:
-        print(i.specs())
-        print(type(i)==weapCsv.weapons)
+# if __name__ == '__main__':
+#     filename = "tempDataName"
+#     objPickler(*(tempFunc(), filename))
+#     unpickled = unPickler(filename)
+#     for i in unpickled:
+#         print(i.specs())
+#         print(type(i)==csvInterp.weapons)

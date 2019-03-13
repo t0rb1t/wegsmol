@@ -30,7 +30,7 @@ def battmake(stats):
 	return batt
 
 def shademake(stats):
-	shade = 15*stats['m']+15*stats['e']
+	shade = 5*stats['m']+5*stats['e']+50
 	return shade
 
 def healthmake(stats):
