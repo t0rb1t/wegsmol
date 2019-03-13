@@ -19,7 +19,7 @@ def levelup(stats,level):
 	if level <= 0:
 		return stats, level
 	elif stats[randstat]>=10:
-		# print("oops")
+		print("oops")
 		return levelup(stats,level)
 	else:
 		stats[randstat]+=1
