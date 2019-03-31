@@ -1,17 +1,21 @@
 #!/usr/bin/python3
 
 #custom
-import namegenerator, charactergen, csvInterp
+import namegenerator, charactergen, csvInterp, objectSaver
 
 #system
 import sys, random, math
 
 class char:
-	def __init__(self, level, name):
+	def __init__(self, level, name, stats):
 		#TODO: Allow people to send in weapons list already.
 		self.level = level
 		self.name = name
-		self.stats, self.mBatt, self.mShade, self.mHealth, self.speed = charactergen.main(level)
+		self.stats = stats
+		self.mShade = 100
+		self.mBatt = 10+stats['m']
+		self.mHealth = 25+math.ceil(2.5*stats['e'])
+		self.speed = 2+math.ceil(stats['d']/5)
 		self.weapons = list()
 	def weaponize(self, weapList, quantity):
 		for i in range(quantity):
@@ -54,6 +58,8 @@ if __name__ == "__main__":
 		level = int(input("What level is your character? > "))
 		build = input("What build? > ")
 	elif len(sys.argv) == 3:
+		if sys.argv[1] == 'i':
+			objectSaver.unPickler(sys.argv[2])
 		try:
 			level = int(sys.argv[1])
 			build = sys.argv[2]
@@ -73,3 +79,4 @@ if __name__ == "__main__":
 		statDict[letter] = stats[i]
 	print(statDict)
 	print(stats, sum(stats))
+	character = char(level,'len',statDict)
