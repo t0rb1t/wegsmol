@@ -43,10 +43,17 @@ class enemy:
 		print(self.name,"was DAMAGED")
 	def turn(self):
 		if self.shadeActive:
-			self.cBatt -= 15
+			self.cBatt -= 2
+		if self.cShade < self.mShade:
+			self.cShade += min(self.mShade-self.cShade, self.roll('m'))
 	def weaponize(self, weapList, quantity):
 		for i in range(quantity):
 			self.weapons.append(random.choice(weapList))
+	def roll(self, stat):
+		die = random.randint(1,10)
+		result = self.stats[stat] + die
+		print(result)
+		return result
 	def selfReport(self):
 		data = ('{name}\n'
 				'Stats   = {stats}\n'
