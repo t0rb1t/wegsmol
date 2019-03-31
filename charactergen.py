@@ -32,7 +32,8 @@ def statmake(level):
 		temp = min([temp, 9])
 		statsum -= temp
 		statslist[i] += temp
-	print(level+15, sum(statslist))
+	if sum(statslist) != level+15:
+		print(level+15, sum(statslist))
 	random.shuffle(statslist)
 	stats = {k: v for k, v in zip(list('misdrew'), statslist)}
 	return stats, level

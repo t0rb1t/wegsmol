@@ -30,40 +30,45 @@ class char:
 		return data
 
 def statgen(level):
-	remaining = level+9
-	shouldbe = level+15
-	ratio = 2
-	# print(level, remaining)
-	statlist = [1,1,1,1,1,1]
-	for i in range(6):
-		stat = math.ceil(remaining/ratio) if math.ceil(remaining/ratio) <= 9 else 9
-		statlist[i] += stat
-		remaining -= stat
-	# random.shuffle(statlist)
-	if shouldbe != sum(statlist):
-		print(statlist, remaining)
-		print(sum(statlist), shouldbe)
-		print("PANIC! THE NUMBERS DON'T ADD UP")
-	if 0 in statlist:
-		print("PANIC! THERE IS A 0")
-	return statlist
+	statslist = [1,1,1,1,1,1,1]
+	statsum = level+9
+	for i in range(len(statslist)):
+		temp = int(statsum / 2)
+		temp = min([temp, 9])
+		statsum -= temp
+		statslist[i] += temp
+	if sum(statslist) != level+15:
+		print(level+15, sum(statslist))
+	return statslist
 
-builds = 	{'tank':'emtdsi',
-			'technophile':'tmedsi',
-			'magic':'imdste'
+builds = 	{'tank':'ewmrdsi',
+			'technophile':'emdrwsi',
+			'magic':'imrdsew'
 }
 
 
 if __name__ == "__main__":
-	# print("This is the player character generator")
-	# print("You are in interactive mode")
-	# level = int(input("What level is your character? > "))
-	# build = input("What build? > ")
-	level = 24
+	if len(sys.argv) == 1:
+		print("This is the player character generator")
+		print("You are in interactive mode")
+		level = int(input("What level is your character? > "))
+		build = input("What build? > ")
+	elif len(sys.argv) == 3:
+		try:
+			level = int(sys.argv[1])
+			build = sys.argv[2]
+		except ValueError:
+			print("something happened that I didn't plan for")
+			exit()
+	else:
+		print("something happened that I didn't plan for")
+		exit()
+	if build in ('custom', 'other'):
+		build = input("order these letters the way you want your stats prioritized\nMISDREW").lower()
+	
 	stats = statgen(level)
-	build = 'magic'
 	statDict = {}
-	for i in range(6):
+	for i in range(len(stats)):
 		letter = builds[build][i]
 		statDict[letter] = stats[i]
 	print(statDict)
