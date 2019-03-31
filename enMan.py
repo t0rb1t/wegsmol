@@ -5,6 +5,9 @@ this script is for managing enemies.
 that is why it's called enMan, that's short for enemy Manager
 Documentation is not great, 
 feel free to add documentation and make a pull request
+usage:
+
+python3 enMan.py (# of enemies, level of enemies)
 """
 
 #system modules
@@ -13,7 +16,7 @@ import sys, time, datetime, random
 #custom modules
 import charactergen, names, namegenerator, objectSaver, csvInterp
 
-global funcDict
+# global funcDict
 
 class enemy:
 	"""

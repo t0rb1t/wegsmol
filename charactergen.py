@@ -11,7 +11,6 @@ def userin(args):
 		level = int(args[1])
 	else:
 		level = int(input("What is the level? > "))
-	level+=3
 	return level
 
 # def levelup(stats,level):
@@ -25,15 +24,15 @@ def userin(args):
 # 		stats[randstat]+=1
 # 		return levelup(stats,level-1)
 
-def levelup(level):
+def statmake(level):
 	statslist = [1,1,1,1,1,1,1]
-	statsum = level+6
+	statsum = level+9
 	for i in range(7):
 		temp = int(statsum / 2)
 		temp = min([temp, 9])
 		statsum -= temp
 		statslist[i] += temp
-	print(level+12, sum(statslist))
+	print(level+15, sum(statslist))
 	random.shuffle(statslist)
 	stats = {k: v for k, v in zip(list('misdrew'), statslist)}
 	return stats, level
@@ -60,7 +59,7 @@ def main(args):
 		level = userin(args)
 	elif type(args) == int:
 		level = args
-	stats = levelup(level)[0]
+	stats = statmake(level)[0]
 	batt = battmake(stats)
 	shade = 100
 	health = healthmake(stats)
