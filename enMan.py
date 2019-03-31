@@ -150,6 +150,13 @@ def weapon(enemies, mode, name=None, filename='weapon-stats.csv'):
 		pass
 	return enemies
 
+def roll(enemies, name, stat):
+	for i in enemies:
+		if i.name.lower() == name.lower():
+			result = i.roll(stat)
+			print(result)
+			return enemies
+
 def helpMessage(enemies):
 	helpFile = open("enMan-commands","r")
 	print(helpFile.read())
@@ -216,7 +223,8 @@ funcDict = {('attack', 'a', 'att'):attack,
 			('fetch', 'f', 'retreive'):fetchEnemies,
 			('kill', 'k'):kill,
 			('spawn', 'sp'):spawn,
-			('weapon', 'w', 'we'):weapon
+			('weapon', 'w', 'we'):weapon,
+			('roll', 'ro'):roll
 			}
 
 if __name__ == "__main__":
