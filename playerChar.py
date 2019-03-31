@@ -67,6 +67,4 @@ if __name__ == "__main__":
 		letter = builds[build][i]
 		statDict[letter] = stats[i]
 	print(statDict)
-	# uno, dos, tre = 'm', 't', 'e'
-	# statDict = {uno:stats[0], dos:stats[1], tre:stats[2]}
 	print(stats, sum(stats))
