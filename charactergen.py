@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 import random, sys, math
 
-def first():
-	stats = {'m':1, 'i':1, 's':1, 'd':1, 'r':1, 'e':1, 'w':1}
-	# stats[(random.choice(list(stats)))] += 7
-	return stats
+# def first():
+# 	stats = {'m':1, 'i':1, 's':1, 'd':1, 'r':1, 'e':1, 'w':1}
+# 	# stats[(random.choice(list(stats)))] += 7
+# 	return stats
 
 def userin(args):
 	if len(args)>=2:
@@ -51,11 +51,11 @@ def healthmake(stats):
 	return health
 
 def speedmake(stats):
-	speed = 5+(math.ceil(0.5*stats['e']))
+	speed = 2+(math.ceil(stats['d']/5))
 	return speed
 
 def main(args):
-	stats = first()
+	# stats = first()
 	if type(args) == list:
 		level = userin(args)
 	elif type(args) == int:
