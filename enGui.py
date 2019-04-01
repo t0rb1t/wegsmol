@@ -6,8 +6,7 @@ import tkinter as tk
 enemies = []
 
 def uno():
-	funcDict = {'attack':e.attack,
-			'report':	e.report,
+	funcDict = {'report':	e.report,
 			'turn':		e.classTurn,
 			'save':		e.storeEnemies,
 			'fetch':	e.fetchEnemies,
@@ -38,33 +37,47 @@ def uno():
 	
 	extraString = tk.StringVar()
 	extraField = tk.Entry(frame, textvariable=extraString)
-
+	
 	def tres():
 		print(enemies,*enemiesBox.curselection(),selectedCommand.get())
-		funcDict[selectedCommand.get()](*enemiesBox.curselection(),selectedCommand.get())
-	def kill(number):
+		if selectedCommand.get() == "report":
+			e.report()
+		else:
+			funcDict[selectedCommand.get()](*enemiesBox.curselection(),selectedCommand.get())
+	
+	def attack():
+		damage = int(extraString.get())
+		number = enemiesBox.curselection()[0]
+		name = enemiesBox.get(number)
+		print(damage, name)
+		e.attack(name, damage)
+	
+	def kill():
+		number = enemiesBox.curselection()[0]
 		name = enemiesBox.get(number)
 		print(name,"was KILLED")
 		enemiesBox.delete(number)
 		return e.kill(name)
+	
 	def name():
 		return e.enemyNames()
+
 	#button to execute commands
 	execButton = tk.Button(frame, text="Execute", command=tres)
-	killButton = tk.Button(frame, text="Kill", command = lambda: kill(enemiesBox.curselection()[0]))
+	killButton = tk.Button(frame, text="Kill", command = kill)
 	creatButto = tk.Button(frame, text="Spawn", command=dos)
 	nameButton = tk.Button(frame, text="List People", command=name)
-	# createButton = tk.Button(frame, text="Spawn", command=lambda: spawn(level.get()))
-	
+	attaButton = tk.Button(frame, text="Attack", command=attack)
 
 	nameButton.grid(column=0, row=0)
 	enemiesBox.grid(column=0, row=1)
 	selCommand.grid(column=0, row=2)
 	execButton.grid(column=0, row=3)
 	killButton.grid(column=1, row=0)
-	extraField.grid(column=1, row=1)
 	levelScale.grid(column=2, row=0)
 	creatButto.grid(column=3, row=0)
+	attaButton.grid(column=4, row=0)
+	extraField.grid(column=4, row=1)
 
 	root.mainloop()
 
