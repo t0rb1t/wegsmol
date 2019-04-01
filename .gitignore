@@ -1,2 +1,4 @@
 __pycache__/
 playerChar_bad.py
+build/
+dist/
