@@ -6,6 +6,7 @@ import namegenerator, charactergen, csvInterp, objectSaver
 #system
 import sys, random, math
 
+
 class char:
 	def __init__(self, level, name, stats):
 		#TODO: Allow people to send in weapons list already.
@@ -49,6 +50,7 @@ builds = 	{'tank':'ewmrdsi',
 			'technophile':'emdrwsi',
 			'magic':'imrdsew'
 }
+
 
 
 if __name__ == "__main__":
