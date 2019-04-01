@@ -9,12 +9,11 @@ def uno():
 	funcDict = {'attack':e.attack,
 			'report':	e.report,
 			'turn':		e.classTurn,
-			'names':	e.enemyNames,
 			'save':		e.storeEnemies,
 			'fetch':	e.fetchEnemies,
-			'kill':		e.kill,
 			'weapon':	e.weapon,
 			'roll':		e.roll}
+
 	root = tk.Tk()
 	level = tk.IntVar()
 	
@@ -28,8 +27,8 @@ def uno():
 	enemiesBox = tk.Listbox(frame)
 	
 	def dos():
-		e.spawn(enemies,level.get())
-		enemiesBox.insert(tk.END, enemies[-1].name)
+		e.spawn(level.get())
+		enemiesBox.insert(tk.END, e.enemies[-1].name)
 	
 	#what level should the spawned enemies be?
 	levelScale = tk.Scale(frame, orient=tk.HORIZONTAL, variable = level, from_ = 1, to = 25)
@@ -42,14 +41,17 @@ def uno():
 
 	def tres():
 		print(enemies,*enemiesBox.curselection(),selectedCommand.get())
-		funcDict[selectedCommand.get()](enemies,*enemiesBox.curselection(),selectedCommand.get())
-	def kill():
-		enemies = e.kill(enemies, enemiesBox.curselection()[0])
+		funcDict[selectedCommand.get()](*enemiesBox.curselection(),selectedCommand.get())
+	def kill(number):
+		name = enemiesBox.get(number)
+		print(name,"was KILLED")
+		enemiesBox.delete(number)
+		return e.kill(name)
 	def name():
-		enemies = e.enemyNames(enemies)
+		return e.enemyNames()
 	#button to execute commands
 	execButton = tk.Button(frame, text="Execute", command=tres)
-	killButton = tk.Button(frame, text="Kill", command=kill)
+	killButton = tk.Button(frame, text="Kill", command = lambda: kill(enemiesBox.curselection()[0]))
 	creatButto = tk.Button(frame, text="Spawn", command=dos)
 	nameButton = tk.Button(frame, text="List People", command=name)
 	# createButton = tk.Button(frame, text="Spawn", command=lambda: spawn(level.get()))

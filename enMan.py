@@ -18,6 +18,8 @@ import charactergen, names, namegenerator, objectSaver, csvInterp
 
 # global funcDict
 
+enemies = []
+
 class enemy:
 	"""
 	cShade means current shade
@@ -65,17 +67,17 @@ class enemy:
 		data += 'Weapons = {}'.format([i.name for i in self.weapons])
 		return data
 
-def classTurn(enemies):
+def classTurn():
 	for i in enemies:
 		i.turn()
-	return enemies
+	return
 
-def enemyNames(enemies):
+def enemyNames():
 	for i in enemies:
 		print(i.name)
-	return enemies
+	return
 
-def report(enemies, name=None):
+def report(name=None):
 	if name == None:
 		for i in enemies:
 			print(i.selfReport())
@@ -85,15 +87,15 @@ def report(enemies, name=None):
 			if i.name.lower() == name.lower():
 				print(i.selfReport())
 	print()
-	return enemies
+	return
 
-def attack(enemies, name, damage, kind="physical"):
+def attack(name, damage, kind="physical"):
 	for i in enemies:
 		if i.name.lower() == name.lower():
 			i.damage(int(damage), kind)
-	return enemies
+	return
 
-def storeEnemies(enemies, filename=datetime.datetime.now().strftime("%y-%m-%d-%H-%M")):
+def storeEnemies(filename=datetime.datetime.now().strftime("%y-%m-%d-%H-%M")):
 	#TODO: It's storing the wrong one or something?
 	single = False
 	for i in enemies:
@@ -105,26 +107,28 @@ def storeEnemies(enemies, filename=datetime.datetime.now().strftime("%y-%m-%d-%H
 		objectSaver.objPickler([theEnemy], filename)
 	elif not single:
 		objectSaver.objPickler(enemies, filename)
-	return enemies
+	return
 
-def fetchEnemies(enemies, filename, mode='add'):
+def fetchEnemies(filename, mode='add'):
 	#TODO: ENSURE THAT IMPORTED ENEMIES AREN'T DUPED NAMES
 	storedenemies = objectSaver.unPickler(filename)
 	if mode == "replace":
-		return storedenemies
+		enemies.clear()
+		enemies.append(storedenemies)
+		return
 	elif mode == "add":
 		enemies += storedenemies
-		return enemies
+		return
 
-def kill(enemies, name):
+def kill(name):
 	if name == 'all':
 		return []
 	for i in enemies:
 		if i.name == name:
 			enemies.remove(i)
-	return enemies
+	return
 
-def spawn(enemies, level):
+def spawn(level):
 	#TODO: Ensure that there are no name dupes!!!
 	try:
 		level = int(level)
@@ -137,9 +141,9 @@ def spawn(enemies, level):
 	newEnemy = enemy(level, name)
 	enemies.append(newEnemy)
 	print(newEnemy.name,"was spawned")
-	return enemies
+	return
 
-def weapon(enemies, mode, name=None, filename='weapon-stats.csv'):
+def weapon(mode, name=None, filename='weapon-stats.csv'):
 	tempWep = csvInterp.myCsvReader(filename)
 	weapList = csvInterp.weaponsToClass(tempWep)
 	if mode=='all':
@@ -148,21 +152,21 @@ def weapon(enemies, mode, name=None, filename='weapon-stats.csv'):
 	elif mode=='single':
 		#TODO: finish this
 		pass
-	return enemies
+	return
 
-def roll(enemies, name, stat):
+def roll(name, stat):
 	for i in enemies:
 		if i.name.lower() == name.lower():
 			result = i.roll(stat)
 			print(result)
-			return enemies
+			return
 
-def helpMessage(enemies):
+def helpMessage():
 	helpFile = open("enMan-commands","r")
 	print(helpFile.read())
-	return enemies
+	return
 
-def commands(enemies, funcDict):
+def commands(funcDict):
 	def isGood(funcDict, listy, state=False):
 		if len(listy) <= 0:
 			return state, None
@@ -182,18 +186,19 @@ def commands(enemies, funcDict):
 		if goodCommand:
 			try:
 				# print(*commList[1::])
-				enemies = funcDict[dictPart](enemies, *commList[1::])
+				# enemies = funcDict[dictPart](enemies, *commList[1::])
+				funcDict[dictPart](*commList[1::])
 			except TypeError:
 				print("try entering that command again.")
 		else:
 			print("That doesn't seem to be a valid command. Type ? for help")
-	return commands(enemies, funcDict)
+	return commands(funcDict)
 
 def startEncounter(numberOfEnemies, level):
-	enemies = []
+	# enemies = []
 	for i in range(numberOfEnemies):
-		spawn(enemies, level)
-	return commands(enemies, funcDict)
+		spawn(level)
+	return commands(funcDict)
 
 def main(args):
 	if len(sys.argv) == 2:
