@@ -111,7 +111,10 @@ def storeEnemies(filename=datetime.datetime.now().strftime("%y-%m-%d-%H-%M")):
 
 def fetchEnemies(filename, mode='add'):
 	#TODO: ENSURE THAT IMPORTED ENEMIES AREN'T DUPED NAMES
-	storedenemies = objectSaver.unPickler(filename)
+	global enemies
+	print(enemies)
+	storedenemies = []
+	storedenemies += objectSaver.unPickler(filename)
 	if mode == "replace":
 		enemies.clear()
 		enemies.append(storedenemies)
