@@ -1,0 +1,215 @@
+"Energy Surge
+",,,,"Energy Surge
+"
+"Utilitarian
+",Mechanics 9,"You’ve used your batt so much you’ve found out how to overcharge it, but this takes a bit of a toll on your body, so you can only do it so often. Twice per day you can use an action to completely fill your batt with energy, additionally your next action (up to a maximum of 80 energy is free).
+","3
+","Utilitarian
+"
+"Combat Machinist
+",Mechanics 8,"You can use an action to restore additional SHADE. Perform a Mechanics roll each time you do this.
+","2
+","Combat Machinist
+"
+"Builder
+",Mechanics 7,"Your FRIEND can attack as a simultaneous action.
+","2
+","Builder
+"
+"Throwable Maker
+",Mechanics 6,"It takes half as long to build a FRIEND, and you can have 2 deployed at once.
+","1
+","Throwable Maker
+"
+"Robot’s Friend
+",Mechanics 5,"As long as you have MESH, you get 1 free throwable weapon per encounter, you cannot save it, it must be thrown during the encounter or it is lost.
+","2
+","Robot’s Friend
+"
+"Subroutinier
+",Mechanics 4,"Any healing done to you is also done to your FRIEND, also, healing your FRIEND costs you 0 MESH.
+","1
+","Subroutinier
+"
+"Mesh Master
+",Intelligence 9,"You may choose one subroutine that you can use without spending any MESH. Maximum cost of 20.
+","3
+","Mesh Master
+"
+"Ingenious
+",Intelligence 8,"You’ve gotten very very good at doing more with less. MESH is versatile, and you’re crafty. You can ignore the minimum required MESH for subroutines.
+","2
+","Ingenious
+"
+"Helper
+",Intelligence 7,"Nine times out of ten, you’re the smartest person in the room. Maybe you’re lucky, maybe you’re just really smart. You can use your ingenuity ability twice more per day.
+","3
+","Helper
+"
+"Trader
+",Intelligence 5,"You aren’t just creative with your own problems, you’re also able to apply your mind to the problems those around you have. You can use your ingenuity ability to help other people’s rolls.
+","2
+","Trader
+"
+"Brawler
+",Intelligence 4,"Your deep understanding of the galactic markets allows you to barter better, and find the best buyers and sellers for products. This allows you to have better buy and sell prices by 5%.
+","1
+","Brawler
+"
+"Heavy Weapons Person
+",Strength 9,"You’re a seasoned fighter, and at this point, you’ve laid out more people than you can count. Whenever you make a melee attack against a target without an active SHADE you can attempt to knock them out on the spot. Roll a strength roll, and their Willpower roll must beat that, or else be immediately knocked out.
+","4
+","Heavy Weapons Person
+"
+"Bruiser
+",Strength 8,"With any heavy weapons, the weapon’s DEFAULT damage bonus is doubled. (for example, the sledge has a damage bonus of +3, with this perk it would be +6).
+","3
+","Bruiser
+"
+"Something
+",Strength 7,"When you hit, you hit hard. It doesn’t matter what you’re hitting either, it always hurts. You gain +3 to all melee attacks.
+","2
+","Something
+"
+"***Rage
+",Strength 6,"
+","
+","***Rage
+"
+"Deep Pockets/Strong Back
+",Strength 5,"You can rage, this increases your damage by +3, but you cannot heal, or run away from any enemies, only stay the same distance or move towards them.
+","2
+","Deep Pockets/Strong Back
+"
+"Light Weapons Expert
+",Strength 4,"People might call you a hoarder, or a pack mule, but in reality, you’re probably both. You’re able to carry a lot more than everyone else without slowing down, and there’s a good chance that others choose to unload their heavier luggage onto you. Your carry weight is doubled.
+","1
+","Light Weapons Expert
+"
+"Hoplophile
+",Dexterity 9,"Light melee weapons deal +5 extra damage.
+","3
+","Hoplophile
+"
+"No Failure
+",Dexterity 8,"If guns were people, you’d get married to one. You automatically get +2 damage with all guns, and you can craft any existing gun without diagrams.
+","3
+","No Failure
+"
+"Sharpshooter
+",Dexterity 7,"Every turn, if your target is unobscured, and in the “Ideal range” you get one free hit, it does not take an action, and it is guaranteed to hit.
+","3
+","Sharpshooter
+"
+"Crackshot
+",Dexterity 6,"Your “Ideal range” for all weapons is expanded by 1 of the matching “Disadvantage Ratio” so, if the weapon’s ideal range is supposed to be 9-11, and the “Disadvantage Ratio” is supposed to be 1/1, then the new ideal range is 8-12.
+","2
+","Crackshot
+"
+"Trickster
+",Dexterity 5,"You gain +3 to hit (not damage) all ranged attacks, including aimed ranged attacks.
+","2
+","Trickster
+"
+"Slippery
+",Dexterity 4,"You are able to relocate much easier, your dexterity rolls have an extra +5 when you’re trying to relocate.
+","2
+","Slippery
+"
+"Martial Artist
+",Reflex 9,"You’re a master of dodging, and now you can use 2 different dodge effects at the same time. For example you can choose to use a pure dodge and a disarm dodge, which means that when unsuccessful, you’ll still take half damage, but on a success you take no damage, and are able to disarm your opponent.
+","3
+","Martial Artist
+"
+"Shattered Shade Slip
+",Reflex 8,"You’re a master of flow state when not armed with anything. If you’re fighting with your fists, you are allowed to use your Reflex stat for your damage.
+","3
+","Shattered Shade Slip
+"
+"Sticky
+",Reflex 7,"You automatically pure dodge when your SHADE gets disabled (either by your BATT running out, or by your SHADE running out.) for 2 rounds, starting when it is disabled. 2 rounds means that after your second turn, you will stop dodging.
+","3
+","Sticky
+"
+"Special Dodges
+",Reflex 6,"If you have a melee weapon equipped, whenever someone leaves your melee range, you can attack them on your turn.
+","2
+","Special Dodges
+"
+"***Pilot
+",Reflex 5,"You can now do 2 extra kinds of dodges. A counterattack dodge which when successful allows you to perform an attack on the enemy’s turn, AND you take no damage.
+ -And a disarm dodge which when successful forces your enemy to perform a strength roll against yours, if you succeed, you can remove ONE of the attacker’s weapons from their hands, AND you take no damage.
+ -Success is calculated the same way as a normal dodge.
+","2
+","***Pilot
+"
+"Immovable Object
+",Reflex 4,"You gain an extra +5 when performing any rolls relating to driving or piloting any kind of vehicle including but not limited to land vehicles, water vehicles, and VVs.
+","1
+","Immovable Object
+"
+"Gladiator
+",Endurance 9,"Twice per encounter at any time when taking damage, you can choose to completely negate all damage taken, unless the damage is equal to or greater than your maximum health.
+","3
+","Gladiator
+"
+"Shrugger
+",Endurance 8,"You know how to take hits in such a way that they just don’t hurt you quite as bad. Any time you take PHYSICAL (not elemental, poison, or other) damage, subtract -2 from the damage dealt, allowing you to stay in the fight longer.
+","3
+","Shrugger
+"
+"Thick Skin
+",Endurance 7,"Any time you are damaged, you can choose to use up one of your next actions (you can still perform a simultaneous action on your next turn) and reduce the incoming damage by an amount equal to your Endurance roll.
+","3
+","Thick Skin
+"
+"Wanderer
+",Endurance 5,"You’ve been in and out of harsh situations, including lots of combat. You’ve grown accustomed to the pain caused by everything in the world, and people throw at you. You have 40 extra health.
+","2
+","Wanderer
+"
+"Second Wind
+",Endurance 3,"You are able to survive without food and water for 1.5x as long as you otherwise would
+","1
+","Second Wind
+"
+"What doesn’t Kill Me
+",Willpower 9,"Once per day, if you drop to 0 health, you gain temporary health points equal to your maximum health. 
+","3
+","What doesn’t Kill Me
+"
+"Staying Power
+",Willpower 8,"Once per encounter you can use an action to turn any incoming damage up until your next turn into temporary health. Enemies are unaware of this, and do not change what they are doing accordingly.
+","3
+","Staying Power
+"
+"Power Through
+",Willpower 7,"Twice per encounter you can use a simultaneous action to make all damage you deal, to give you an equal amount of temporary health.
+","
+","Power Through
+"
+"Unbreakable
+",Willpower 6,"You can use up your simultaneous action to “Power through” an injury. To do this, roll a Willpower roll, and the normal roll you’d perform for that action, and use the lowest number. If you have any perks that would improve the roll normally, apply them to the normal roll BEFORE comparing.
+","2
+","Unbreakable
+"
+"Smooth Talker
+",Willpower 5,"You are immune to torture
+","1
+","Smooth Talker
+"
+"Quick-Fix-Heals
+",Willpower 3,"With the right leverage you find that you can talk your way out of almost anything. You can attempt to bargain with people while in combat.
+","1
+","Quick-Fix-Heals
+"
+"Bypasser
+","Mechanics 4, and Intelligence 4","You are able to perform healing with MESH if you’re in combat.
+","3
+","Bypasser
+"
+"Hot Swap
+",Intelligence 6 or Mechanics 6,"You’re a master of breaking into anything. You’re able to use either Intelligence OR mechanics for breaking into anything that requires either of these skills. For example, you can use Intelligence to pick locks, and you can use Mechanics to bypass a security terminal.
+","3
+","Hot Swap
+"

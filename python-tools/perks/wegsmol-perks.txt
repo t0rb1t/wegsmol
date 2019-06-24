@@ -1,0 +1,182 @@
+***Mechanics Perks
+Energy Surge
+Requirement: Mechanics 9
+Cost: 3
+Description: You’ve used your batt so much you’ve found out how to overcharge it, but this takes a bit of a toll on your body, so you can only do it so often. Twice per day you can use an action to completely fill your batt with energy, additionally your next action (up to a maximum of 80 energy is free).
+Utilitarian
+Requirement: Mechanics 8
+Cost: 2
+Description: You can use an action to restore additional SHADE. Perform a Mechanics roll each time you do this.
+Combat Machinist
+Requirement: Mechanics 7
+Cost: 2
+Description: Your FRIEND can attack as a simultaneous action.
+Builder
+Requirement: Mechanics 6
+Cost: 1
+Description: It takes half as long to build a FRIEND, and you can have 2 deployed at once.
+Throwable Maker
+Requirement: Mechanics 5
+Cost: 2
+Description: As long as you have MESH, you get 1 free throwable weapon per encounter, you cannot save it, it must be thrown during the encounter or it is lost.
+Robot’s Friend
+Requirement: Mechanics 4
+Cost: 1
+Description: Any healing done to you is also done to your FRIEND, also, healing your FRIEND costs you 0 MESH.
+Intelligence Perks
+Subroutinier
+Requirement: Intelligence 9
+Cost: 3
+Description: You may choose one subroutine that you can use without spending any MESH. Maximum cost of 20.
+Mesh Master
+Requirement: Intelligence 8
+Cost: 2
+Description: You’ve gotten very very good at doing more with less. MESH is versatile, and you’re crafty. You can ignore the minimum required MESH for subroutines.
+Ingenious
+Requirement: Intelligence 7
+Cost: 3
+Description: Nine times out of ten, you’re the smartest person in the room. Maybe you’re lucky, maybe you’re just really smart. You can use your ingenuity ability twice more per day.
+Helper
+Requirement: Intelligence 5
+Cost: 2
+Description: You aren’t just creative with your own problems, you’re also able to apply your mind to the problems those around you have. You can use your ingenuity ability to help other people’s rolls.
+Trader
+Requirement: Intelligence 4
+Cost: 1
+Description: Your deep understanding of the galactic markets allows you to barter better, and find the best buyers and sellers for products. This allows you to have better buy and sell prices by 5%.
+Strength Perks
+Brawler
+Requirement: Strength 9
+Cost: 4
+Description: You’re a seasoned fighter, and at this point, you’ve laid out more people than you can count. Whenever you make a melee attack against a target without an active SHADE you can attempt to knock them out on the spot. Roll a strength roll, and their Willpower roll must beat that, or else be immediately knocked out.
+Heavy Weapons Person
+Requirement: Strength 8
+Cost: 3
+Description: With any heavy weapons, the weapon’s DEFAULT damage bonus is doubled. (for example, the sledge has a damage bonus of +3, with this perk it would be +6).
+Bruiser
+Requirement: Strength 7
+Cost: 2
+Description: When you hit, you hit hard. It doesn’t matter what you’re hitting either, it always hurts. You gain +3 to all melee attacks.
+Something
+Requirement: Strength 6
+Cost: 
+Description: 
+***Rage
+Requirement: Strength 5
+Cost: 2
+Description: You can rage, this increases your damage by +3, but you cannot heal, or run away from any enemies, only stay the same distance or move towards them.
+Deep Pockets/Strong Back
+Requirement: Strength 4
+Cost: 1
+Description: People might call you a hoarder, or a pack mule, but in reality, you’re probably both. You’re able to carry a lot more than everyone else without slowing down, and there’s a good chance that others choose to unload their heavier luggage onto you. Your carry weight is doubled.
+Dexterity Perks
+Light Weapons Expert
+Requirement: Dexterity 9
+Cost: 3
+Description: Light melee weapons deal +5 extra damage.
+Hoplophile
+Requirement: Dexterity 8
+Cost: 3
+Description: If guns were people, you’d get married to one. You automatically get +2 damage with all guns, and you can craft any existing gun without diagrams.
+No Failure
+Requirement: Dexterity 7
+Cost: 3
+Description: Every turn, if your target is unobscured, and in the “Ideal range” you get one free hit, it does not take an action, and it is guaranteed to hit.
+Sharpshooter
+Requirement: Dexterity 6
+Cost: 2
+Description: Your “Ideal range” for all weapons is expanded by 1 of the matching “Disadvantage Ratio” so, if the weapon’s ideal range is supposed to be 9-11, and the “Disadvantage Ratio” is supposed to be 1/1, then the new ideal range is 8-12.
+Crackshot
+Requirement: Dexterity 5
+Cost: 2
+Description: You gain +3 to hit (not damage) all ranged attacks, including aimed ranged attacks.
+Trickster
+Requirement: Dexterity 4
+Cost: 2
+Description: You are able to relocate much easier, your dexterity rolls have an extra +5 when you’re trying to relocate.
+***Reflex Perks
+Slippery
+Requirement: Reflex 9
+Cost: 3
+Description: You’re a master of dodging, and now you can use 2 different dodge effects at the same time. For example you can choose to use a pure dodge and a disarm dodge, which means that when unsuccessful, you’ll still take half damage, but on a success you take no damage, and are able to disarm your opponent.
+Martial Artist
+Requirement: Reflex 8
+Cost: 3
+Description: You’re a master of flow state when not armed with anything. If you’re fighting with your fists, you are allowed to use your Reflex stat for your damage.
+Shattered Shade Slip
+Requirement: Reflex 7
+Cost: 3
+Description: You automatically pure dodge when your SHADE gets disabled (either by your BATT running out, or by your SHADE running out.) for 2 rounds, starting when it is disabled. 2 rounds means that after your second turn, you will stop dodging.
+Sticky
+Requirement: Reflex 6
+Cost: 2
+Description: If you have a melee weapon equipped, whenever someone leaves your melee range, you can attack them on your turn.
+Special Dodges
+Requirement: Reflex 5
+Cost: 2
+Description: You can now do 2 extra kinds of dodges. A counterattack dodge which when successful allows you to perform an attack on the enemy’s turn, AND you take no damage.
+-And a disarm dodge which when successful forces your enemy to perform a strength roll against yours, if you succeed, you can remove ONE of the attacker’s weapons from their hands, AND you take no damage.
+-Success is calculated the same way as a normal dodge.
+***Pilot
+Requirement: Reflex 4
+Cost: 1
+Description: You gain an extra +5 when performing any rolls relating to driving or piloting any kind of vehicle including but not limited to land vehicles, water vehicles, and VVs.
+***Endurance Perks
+Immovable Object
+Requirement: Endurance 9
+Cost: 3
+Description: Twice per encounter at any time when taking damage, you can choose to completely negate all damage taken, unless the damage is equal to or greater than your maximum health.
+Gladiator
+Requirement: Endurance 8
+Cost: 3
+Description: You know how to take hits in such a way that they just don’t hurt you quite as bad. Any time you take PHYSICAL (not elemental, poison, or other) damage, subtract -2 from the damage dealt, allowing you to stay in the fight longer.
+Shrugger
+Requirement: Endurance 7
+Cost: 3
+Description: Any time you are damaged, you can choose to use up one of your next actions (you can still perform a simultaneous action on your next turn) and reduce the incoming damage by an amount equal to your Endurance roll.
+Thick Skin
+Requirement: Endurance 5
+Cost: 2
+Description: You’ve been in and out of harsh situations, including lots of combat. You’ve grown accustomed to the pain caused by everything in the world, and people throw at you. You have 40 extra health.
+Wanderer
+Requirement: Endurance 3
+Cost: 1
+Description: You are able to survive without food and water for 1.5x as long as you otherwise would
+***Willpower Perks
+Second Wind
+Requirement: Willpower 9
+Cost: 3
+Description: Once per day, if you drop to 0 health, you gain temporary health points equal to your maximum health. 
+What doesn’t Kill Me
+Requirement: Willpower 8
+Cost: 3
+Description: Once per encounter you can use an action to turn any incoming damage up until your next turn into temporary health. Enemies are unaware of this, and do not change what they are doing accordingly.
+Staying Power
+Requirement: Willpower 7
+Cost: 
+Description: Twice per encounter you can use a simultaneous action to make all damage you deal, to give you an equal amount of temporary health.
+Power Through
+Requirement: Willpower 6
+Cost: 2
+Description: You can use up your simultaneous action to “Power through” an injury. To do this, roll a Willpower roll, and the normal roll you’d perform for that action, and use the lowest number. If you have any perks that would improve the roll normally, apply them to the normal roll BEFORE comparing.
+Unbreakable
+Requirement: Willpower 5
+Cost: 1
+Description: You are immune to torture
+Smooth Talker
+Requirement: Willpower 3
+Cost: 1
+Description: With the right leverage you find that you can talk your way out of almost anything. You can attempt to bargain with people while in combat.
+Mixed Perks
+Quick-Fix-Heals
+Requirement: Mechanics 4, and Intelligence 4
+Cost: 3
+Description: You are able to perform healing with MESH if you’re in combat.
+Bypasser
+Requirement: Intelligence 6 or Mechanics 6
+Cost: 3
+Description: You’re a master of breaking into anything. You’re able to use either Intelligence OR mechanics for breaking into anything that requires either of these skills. For example, you can use Intelligence to pick locks, and you can use Mechanics to bypass a security terminal.
+Hot Swap
+Requirement: Willpower 5, and Mechanics 5
+Cost: 3
+Description: You can add and remove mods on your own without any help. This can be done in combat. Each insertion and removal takes 2 actions.
