@@ -1,0 +1,6 @@
+Name:                Namra
+ID:                  2
+Importance:          0
+Notes:               Grim's friend
+                     Dead
+Color:               #80a1f6

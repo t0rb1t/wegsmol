@@ -1,0 +1,6 @@
+Name:                Douglas
+ID:                  6
+Importance:          1
+Goal:                To keep the tavern he inherited from his father alive.
+Notes:               Tavern Owner
+Color:               #d78cd8

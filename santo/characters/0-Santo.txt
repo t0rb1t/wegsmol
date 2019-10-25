@@ -1,0 +1,18 @@
+Name:                Santo
+ID:                  0
+Importance:          2
+Motivation:          Santo wants nothing more than to live peacefully, unfortunately he has an uncanny ability to find trouble, and he can't stand watching injustices go down, even if it means putting himself, and those he cares about in danger. His idea of how horrible certain injustices are, puts everyone around him in the line of fire.
+Goal:                Santo wants to find somewhere peaceful where he can just enjoy life.
+Conflict:            As well as constantly picking fights with the wrong people, he's considered a violent criminal in many sectors, and has several criminal organizations after him.
+Notes:               M	1
+                     I	2
+                     S	3
+                     D	9
+                     R	9
+                     E	2
+                     W	5
+                     
+                     Constantly uses mental checklists
+Color:               #94da86
+Forearm Mod:         Is located in upper forearm. Includes proxwake shock. Includes **very** basic vital sign monitor as well, does not include a display.
+While sleeping:      Keeps his gun on the right, SHADE on the left.

@@ -1,0 +1,5 @@
+Name:                The one who killed grim's friend
+ID:                  3
+Importance:          0
+Motivation:          Power trip
+Color:               #f0bcbf

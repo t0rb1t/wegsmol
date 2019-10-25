@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+  <plot name="Santo clearing his name" ID="0" importance="2" characters="0"/>
+  <plot name="Grim's Self-Actualization" ID="1" importance="1"/>
+  <plot name="Grim learning to accept Fritzy" ID="2" importance="0" characters="1"/>
+  <plot name="Santo adopting Fritzy" ID="3" importance="0" characters="0"/>
+  <plot name="Santo dealing with the criminals" ID="4" importance="1" characters="0"/>
+</root>

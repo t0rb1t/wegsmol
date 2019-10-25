@@ -1,0 +1,7 @@
+Name:                Fritzy
+ID:                  7
+Importance:          1
+Motivation:          Fear of other humans, Fritzy was abused, and used in a fighting ring
+Goal:                To find peace, and live out the rest of his days
+Notes:               Dog
+Color:               #878aa7

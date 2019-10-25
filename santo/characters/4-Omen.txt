@@ -1,0 +1,11 @@
+Name:                Omen
+ID:                  4
+Importance:          1
+Motivation:          Money, power, and to a lesser extent, reputation
+Goal:                To settle the situation between her and Santo. She hates him for betraying her
+Conflict:            Her people sometimes go against what she says, and she's too violent for her own good
+Full Summary:        Woman
+                     Hates Men
+                     Hates the sight of blood
+                     Loves buring people
+Color:               #f4a4d1

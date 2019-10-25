@@ -1,0 +1,11 @@
+Name:                Grim
+ID:                  1
+Importance:          2
+Motivation:          Her loathing for herself, and what she's done in the past. She had a friend on her old homeworld, and Grim sold her out for money, just enough money to get off Meilia, and try to find a life. She's driven by her past, and nothing more. She wants to escape it.
+Goal:                To find someone who respects her, in hopes that that may give her a chance to respect herself. It's too difficult for her to know what to do and what not to do.
+Conflict:            She hates herself, and believes that she'll end up betraying anyone who ends up getting close to her.
+Epiphany:            Eventually she gets a chance to sell out Grim, and she doesn't. This is when she realizes that maybe she's not destined to be a shitty person.
+Notes:               Grim grew up on the streets of a poor mining planet called Meilia.
+                     
+                     Her name comes from the fact that from a young age, everything she said seemed to be filtered through several layers of grim, harsh, reality.
+Color:               #e787a8
