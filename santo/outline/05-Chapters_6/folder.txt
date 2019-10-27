@@ -1,7 +1,0 @@
-title:          Chapters 6
-ID:             21
-type:           folder
-compile:        2
-setGoal:        1800
-
-

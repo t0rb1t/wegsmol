@@ -1,7 +1,0 @@
-title:          Chapters 17
-ID:             65
-type:           folder
-compile:        2
-setGoal:        1800
-
-

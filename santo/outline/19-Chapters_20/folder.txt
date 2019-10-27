@@ -1,7 +1,0 @@
-title:          Chapters 20
-ID:             77
-type:           folder
-compile:        2
-setGoal:        1800
-
-

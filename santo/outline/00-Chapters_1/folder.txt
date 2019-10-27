@@ -1,7 +1,0 @@
-title:          Chapters 1
-ID:             1
-type:           folder
-POV:            0
-compile:        2
-
-

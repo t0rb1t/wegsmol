@@ -1,7 +1,0 @@
-title:          Chapters 8
-ID:             29
-type:           folder
-compile:        2
-setGoal:        1800
-
-

@@ -1,7 +1,0 @@
-title:          Chapters 13
-ID:             49
-type:           folder
-compile:        2
-setGoal:        1800
-
-

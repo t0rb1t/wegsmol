@@ -1,7 +1,0 @@
-title:          Chapters 18
-ID:             69
-type:           folder
-compile:        2
-setGoal:        1800
-
-
