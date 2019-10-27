@@ -10,14 +10,14 @@
     "corkSizeFactor": 89,
     "corkStyle": "new",
     "defaultTextType": "md",
-    "dict": "pyspellchecker:en",
+    "dict": "PyEnchant:en_CA",
     "dontShowDeleteWarning": false,
-    "folderView": "cork",
+    "folderView": "text",
     "frequencyAnalyzer": {
         "phraseMax": 5,
         "phraseMin": 2,
-        "wordExclude": "a, and, or",
-        "wordMin": 1
+        "wordExclude": "a, and, or, the, to",
+        "wordMin": 4
     },
     "fullScreenTheme": "spacedreams",
     "fullscreenSettings": {
@@ -25,11 +25,11 @@
         "autohide-left": true,
         "autohide-top": true
     },
-    "lastTab": 5,
+    "lastTab": 6,
     "openIndexes": [
         0,
         [
-            null
+            "4"
         ],
         null
     ],
@@ -46,11 +46,11 @@
     "revisions": {
         "keep": false,
         "rules": {
-            "2592000": 86400,
-            "3600": 600,
-            "600": 60,
-            "86400": 3600,
-            "null": 604800
+            "2592000": 86400.0,
+            "3600": 600.0,
+            "600": 60.0,
+            "86400": 3600.0,
+            "null": 604800.0
         },
         "smartremove": true
     },
