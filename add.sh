@@ -1,4 +1,4 @@
 #!/bin/sh
 
-unzip -d santo/ santo.msk
+unzip -d santo/ -u santo.msk
 git add santo/*
