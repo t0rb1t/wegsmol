@@ -17,7 +17,7 @@
         "phraseMax": 5,
         "phraseMin": 2,
         "wordExclude": "a, and, or, the, to",
-        "wordMin": 4
+        "wordMin": 3
     },
     "fullScreenTheme": "spacedreams",
     "fullscreenSettings": {
@@ -25,7 +25,7 @@
         "autohide-left": true,
         "autohide-top": true
     },
-    "lastTab": 6,
+    "lastTab": 1,
     "openIndexes": [
         0,
         [
