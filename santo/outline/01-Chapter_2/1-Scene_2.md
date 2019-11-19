@@ -15,6 +15,39 @@ _"Hey, you know, I really really appreciate how you guys patched me up, my leg a
 
 The man in uniform let out a very small sigh before waving a hand at him dismissively.
 
-_"We're still investigating your connection to the three dead men in an alley."_
+_"We's still investigatin your connection to those three dead men in an alley."_
 
 That was the last thing he wanted to hear, but it was also completely unsurprising. Considering there was probably a blood trail from the scene of the ambush, all the way to where he was found. On top of that, he had a gun on him that had recently been fired, as well as a SHADE that was partly depleted. Which they could almost definitely link to the dead men. Of course, now Santo had to come up with some kind of response that made sense in context, one that wouldn't make the authorities even more suspicious. 
+
+_"Dead bodies? What dead bodies?"_
+
+_"Yeah... Can't say anythin, already said too much."_
+
+**"Good, he doesn't think anything more than what he already knows."** \
+_"Oh, right, it's an active case. Makes sense."_
+
+Then the man left, back to his desk. Santo was left with more time to think about what to do. Overall, he just wanted to get the hell out of town, preferably with his stuff, but honestly, as much as he loved his stuff, that part wasn't an absolute requirement.
+
+_"Heyo"_
+
+The small voice came from behind, it was obviously the girl in the cell with him. He turned to her, and gave her a questioning look. She responded with a look that effectively said "I'm really not sure if this was a good idea..." Even though he simply wanted to just start asking questions, he waited. His experience was that much of the time, simply waiting for the other person to start talking was the most effective plan of action.
+
+_"I need another person"_
+
+_"What do you need another person for?"_
+
+_"Leaving"_
+
+_"Okay, look, you're going to have to start speaking in fuller sentences, or else I'm never going to understand what you want from me."_
+
+_"I want to leave. I need someone."_
+
+_"See, I still don't know what you're trying to ask of me..."_
+
+_"I want to break out, and leave this rock."_
+
+_"You mean that you want to catch a ride off of Icroria? Where are you going to go."_
+
+_"Yes, don't know."_
+
+Santo was pretty quick to trust, which had gotten him into a lot of trouble, but there was something about her that just felt sincere, and he was ready to try breaking out, even if it was a terrible idea.

@@ -10,9 +10,9 @@ Santo woke up to a woman's face looking down at him. She looked young, probably 
 
 Santo wasn't generally one to measure his words carefully, sometimes he tried, but it rarely really worked. For the most part, he either stayed pretty much silent, or would go on long tirades and rants. Neither one served him very well, but overall the silence was less detrimental to his life and relationships.
 
-_"What are you doing in here? I haven't seen your face before, and believe me, I've seen a lot of faces."_
+_"Why are you here?"_
 
-Her response was candid, which was refreshing, but also a little surprising. Left with a moment to think about his situation, he finally sat up, which forced her to stop looking down on him, or else she'd get her nose **bonk**ed by his forehead.
+Her response was candid, which was refreshing, but also a little surprising. She spoke with a very dead cadence and tone, as if she didn't really care to speak at all. Left with a moment to think about his situation, he finally sat up, which forced her to stop looking down on him, or else she'd get her nose **bonk**ed by his forehead.
 
 He rubbed his eyes and breathed out slowly. 
 

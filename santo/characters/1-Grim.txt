@@ -8,4 +8,6 @@ Epiphany:            Eventually she gets a chance to sell out Grim, and she does
 Notes:               Grim grew up on the streets of a poor mining planet called Meilia.
                      
                      Her name comes from the fact that from a young age, everything she said seemed to be filtered through several layers of grim, harsh, reality.
+                     
+                     Was sold or abandoned as an infant
 Color:               #e787a8

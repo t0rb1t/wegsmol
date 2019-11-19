@@ -1,7 +1,7 @@
 title:          Chapter 10
 ID:             37
 type:           folder
-compile:        2
+compile:        0
 setGoal:        1800
 
 

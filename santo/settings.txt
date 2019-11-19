@@ -10,7 +10,7 @@
     "corkSizeFactor": 89,
     "corkStyle": "new",
     "defaultTextType": "md",
-    "dict": "PyEnchant:en_CA",
+    "dict": "PyEnchant:en_US",
     "dontShowDeleteWarning": false,
     "folderView": "text",
     "frequencyAnalyzer": {
@@ -25,11 +25,11 @@
         "autohide-left": true,
         "autohide-top": true
     },
-    "lastTab": 1,
+    "lastTab": 6,
     "openIndexes": [
         0,
         [
-            "6"
+            "10"
         ],
         null
     ],
@@ -65,7 +65,7 @@
         "cursorWidth": 1,
         "focusMode": false,
         "font": "Noto Sans,10,-1,5,50,0,0,0,0,0",
-        "fontColor": "#eff0f1",
+        "fontColor": "#ffffff",
         "indent": false,
         "lineSpacing": 100,
         "marginsLR": 0,

@@ -19,3 +19,7 @@ Generally contains 100 units of 100 microbots that are able to "consume" and mov
 
 SHADE: Stands for Superior Highspeed Automatic Defence Engine. \
 Uses MESH technology to track and intercept incoming dangers such as bullets, knives, blunt weapons, and other things like that. \
+
+VV: Stands for Vacuum Vehicle. The term refers to any space-faring craft.
+
+There are three main types of firearm rounds. Smalls, which are 10mm, mids which are 5.56, and longs which are .308. These became standard due to the firearms industry being monopolized for some time just before humans left earth.

@@ -1,7 +1,7 @@
 title:          Chapter 16
 ID:             61
 type:           folder
-compile:        2
+compile:        0
 setGoal:        1800
 
 

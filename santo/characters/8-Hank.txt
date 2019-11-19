@@ -1,0 +1,6 @@
+Name:                Hank
+ID:                  8
+Importance:          0
+Motivation:          I want to impress the girl that I met at the bar last year. If I lose weight, and get a promotion maybe she'll be into me.
+Full Summary:        Southern accent, sort of.
+Color:               #d39096

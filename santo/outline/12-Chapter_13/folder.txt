@@ -1,7 +1,7 @@
 title:          Chapter 13
 ID:             49
 type:           folder
-compile:        2
+compile:        0
 setGoal:        1800
 
 
