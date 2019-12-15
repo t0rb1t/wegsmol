@@ -6,7 +6,7 @@ compile:        2
 setGoal:        600
 
 
-_"Grim"_
+_"My name? It's... Grim"_
 
 **"I'm tired of people asking me what my name is. Honestly, why can't they be happy just yelling 'hey you' at me? that would be so much more convenient."**
 
@@ -70,3 +70,7 @@ _"Mate! Like cellmate! You were my cellmate!"_
 _"Whatever, just... We're going to the shipyard."_
 
 _"Sounds good cap!"_
+
+**"Cap isn't any better. I don't know why he thinks that we have to be friends through this whole thing. Just let it go."**
+
+Grim groaned, paused for a moment, and then just continued walking towards the shipyard.

@@ -22,9 +22,9 @@ _"Just wait, and watch."_
 
 She then fiddled with something in her right hand, he couldn't see it though. She didn't fiddle for long though, because she then got up and walked up to the bars and called the man over.
 
-_"Oh hank-y, I need to pee, and I'm uncomfortable going with this weirdo in the cell with me."_
+_"Oh Hank-y, I need to pee, and I'm uncomfortable going with this weirdo in the cell with me."_
 
-That was possibly the most he'd ever heard her say, and this time she said it with a somewhat jovial tone, instead of her normal deadpan, flat tone. It was like she'd transformed into a completely different person.
+That was possibly the most he'd ever heard her say, and this time she said it with a somewhat jovial tone, instead of her normal deadpan, flat delivery. It was like she'd transformed into a completely different person.
 
 _"Look, I's not supposed to let you out, ya remember that other time you got out before I was supposed to let you go? I got a serious talkin to."_
 
